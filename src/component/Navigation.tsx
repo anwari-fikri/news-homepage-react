@@ -24,7 +24,7 @@ const Navigation = () => {
                 <img src={iconClose} alt="iconMenu" className="pl-5 py-3" />
               </button>
             </div>
-            <div className="flex flex-col pt-16 text-xl text-very-dark-blue gap-5">
+            <div className="flex flex-col pt-16 text-xl font-sans text-very-dark-blue gap-5">
               <ul>
                 <li>Home</li>
               </ul>
