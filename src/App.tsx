@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./component/Hero";
 import Navigation from "./component/Navigation";
 import New from "./component/New";
+import Popular from "./component/Popular";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navigation />
       <Hero />
       <New />
+      <Popular />
     </>
   );
 }
