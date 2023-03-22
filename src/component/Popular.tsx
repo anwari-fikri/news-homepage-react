@@ -5,7 +5,7 @@ import gamingGrowth from "../assets/image-gaming-growth.jpg";
 
 const Popular = () => {
   return (
-    <div>
+    <div className="py-5">
       <div className="flex flex-row items-center justify-between mx-5 my-10">
         <img src={retroPc} alt="retro-pc" className="w-24" />
         <div className="flex flex-col gap-1 pl-5 pr-3">

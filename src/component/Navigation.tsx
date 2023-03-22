@@ -9,7 +9,7 @@ const Navigation = () => {
 
   return (
     <nav>
-      <div className="flex items-center justify-between px-5 py-5">
+      <div className="flex items-center justify-between px-5 py-4">
         <img src={logo} alt="logo" />
         <button onClick={() => setIsSidebarOpen(!!!isSidebarOpen)}>
           <img src={iconMenu} alt="iconMenu" className="pl-5 py-5" />
