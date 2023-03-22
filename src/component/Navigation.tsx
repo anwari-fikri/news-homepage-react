@@ -11,9 +11,31 @@ const Navigation = () => {
     <nav>
       <div className="flex items-center justify-between px-5 py-4">
         <img src={logo} alt="logo" />
-        <button onClick={() => setIsSidebarOpen(!!!isSidebarOpen)}>
-          <img src={iconMenu} alt="iconMenu" className="pl-5 py-5" />
-        </button>
+        <div>
+          <ul className="hidden md:flex">
+            <li className="cursor-pointer ml-10 text-sm text-dark-grayish-blue">
+              <a href="/#home">Home</a>
+            </li>
+            <li className="cursor-pointer ml-10 text-sm text-dark-grayish-blue">
+              <a href="/#about">New</a>
+            </li>
+            <li className="cursor-pointer ml-10 text-sm text-dark-grayish-blue">
+              <a href="/#skills">Popular</a>
+            </li>
+            <li className="cursor-pointer ml-10 text-sm text-dark-grayish-blue">
+              <a href="/#projects">Trending</a>
+            </li>
+            <li className="cursor-pointer ml-10 text-sm text-dark-grayish-blue">
+              <a href="/#contact">Categories</a>
+            </li>
+          </ul>
+          <button
+            onClick={() => setIsSidebarOpen(!!!isSidebarOpen)}
+            className="md:hidden"
+          >
+            <img src={iconMenu} alt="iconMenu" className="pl-5 py-5" />
+          </button>
+        </div>
       </div>
 
       {isSidebarOpen && (
