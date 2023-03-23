@@ -3,39 +3,54 @@ import retroPc from "../assets/image-retro-pcs.jpg";
 import topLaptops from "../assets/image-top-laptops.jpg";
 import gamingGrowth from "../assets/image-gaming-growth.jpg";
 
+const PopularItem = ({
+  image,
+  number,
+  title,
+  content,
+}: {
+  image: any;
+  number: string;
+  title: string;
+  content: string;
+}) => {
+  return (
+    <>
+      <div className="flex flex-row items-center justify-left mx-5 my-10">
+        <img src={image} alt="retro-pc" className="w-28" />
+        <div className="flex flex-col gap-1 pl-5 pr-3">
+          <h2 className="text-grayish-blue font-bold text-3xl">{number}</h2>
+          <h3 className="font-bold text-lg">{title}</h3>
+          <p className="font-extralight text-dark-grayish-blue text-sm">
+            {content}
+          </p>
+        </div>
+      </div>
+    </>
+  );
+};
+
 const Popular = () => {
   return (
     <div className="flex flex-col md:flex-row ">
-      <div className="flex flex-row items-center justify-between mx-5 my-10">
-        <img src={retroPc} alt="retro-pc" className="w-28" />
-        <div className="flex flex-col gap-1 pl-5 pr-3">
-          <h2 className="text-grayish-blue font-bold text-3xl">01</h2>
-          <h3 className="font-bold text-lg">Reviving Retro PCs</h3>
-          <p className="font-extralight text-dark-grayish-blue text-sm">
-            What happens when old PCs are given modern upgrades?
-          </p>
-        </div>
-      </div>
-      <div className="flex flex-row items-center justify-between mx-5 my-10">
-        <img src={topLaptops} alt="retro-pc" className="w-28" />
-        <div className="flex flex-col gap-1 pl-5 pr-3">
-          <h2 className="text-grayish-blue font-bold text-3xl">02</h2>
-          <h3 className="font-bold text-lg">Top 10 Laptops of 2022</h3>
-          <p className="font-extralight text-dark-grayish-blue text-sm">
-            Our best picks for various needs and budgets
-          </p>
-        </div>
-      </div>
-      <div className="flex flex-row items-center justify-between mx-5 my-10">
-        <img src={gamingGrowth} alt="retro-pc" className="w-28" />
-        <div className="flex flex-col gap-1 pl-5 pr-3">
-          <h2 className="text-grayish-blue font-bold text-3xl">03</h2>
-          <h3 className="font-bold text-lg">The Growth of Gaming</h3>
-          <p className="font-extralight text-dark-grayish-blue text-sm">
-            How the pandemic has sparked fresh opportunities
-          </p>
-        </div>
-      </div>
+      <PopularItem
+        image={retroPc}
+        number="1"
+        title="Reviving Retro PCs"
+        content="What happens when old PCs are given modern upgrades?"
+      />
+      <PopularItem
+        image={topLaptops}
+        number="2"
+        title="Top 10 Laptops of 2022"
+        content="Our best picks for various needs and budgets"
+      />
+      <PopularItem
+        image={gamingGrowth}
+        number="3"
+        title="The Growth of Gaming"
+        content="How the pandemic has sparked fresh opportunities"
+      />
     </div>
   );
 };
