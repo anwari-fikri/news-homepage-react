@@ -39,7 +39,7 @@ const Navigation = () => {
       </div>
 
       {isSidebarOpen && (
-        <div className="fixed right-0 top-0 w-full h-screen bg-black/50">
+        <div className="fixed right-0 top-0 w-full h-screen bg-black/50 ">
           <div className="fixed h-screen w-4/6 top-0 right-0 bg-white px-5 py-8">
             <div className="flex justify-end">
               <button onClick={() => setIsSidebarOpen(!!!isSidebarOpen)}>
