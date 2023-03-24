@@ -8,11 +8,13 @@ function App() {
   return (
     <div className="lg:px-48 md:px-0">
       <Navigation />
-      <div className="flex flex-col md:flex-row">
-        <Hero />
-        <New />
-      </div>
-      <Popular />
+      <main>
+        <div className="flex flex-col md:flex-row">
+          <Hero />
+          <New />
+        </div>
+        <Popular />
+      </main>
     </div>
   );
 }
