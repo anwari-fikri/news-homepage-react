@@ -15,7 +15,7 @@ const NewItem = ({ title, content }: { title: string; content: string }) => {
 
 const New = () => {
   return (
-    <div className="bg-very-dark-blue my-10 mx-5 p-5 pb-0 lg:w-[100%]">
+    <section className="bg-very-dark-blue my-10 mx-5 p-5 pb-0 lg:w-[100%]">
       <div className="flex flex-col justify-evenly h-[100%] ">
         <h2 className="text-soft-orange font-bold text-3xl">New</h2>
         <NewItem
@@ -35,7 +35,7 @@ const New = () => {
           what that means."
         />
       </div>
-    </div>
+    </section>
   );
 };
 

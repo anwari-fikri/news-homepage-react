@@ -4,7 +4,7 @@ import heroImageDesktop from "../assets/image-web-3-desktop.jpg";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col py-10 px-5 gap-10">
+    <section className="flex flex-col py-10 px-5 gap-10">
       <img src={heroImageMobile} alt="iconMenu" className="md:hidden" />
       <img src={heroImageDesktop} alt="iconMenu" className="hidden md:flex" />
       <div className="flex flex-col gap-10 md:flex-row">
@@ -22,7 +22,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

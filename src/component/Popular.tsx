@@ -32,7 +32,7 @@ const PopularItem = ({
 
 const Popular = () => {
   return (
-    <div className="flex flex-col md:flex-row ">
+    <section className="flex flex-col md:flex-row ">
       <PopularItem
         image={retroPc}
         number="1"
@@ -51,7 +51,7 @@ const Popular = () => {
         title="The Growth of Gaming"
         content="How the pandemic has sparked fresh opportunities"
       />
-    </div>
+    </section>
   );
 };
 
