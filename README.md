@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/anwari-fikri/news-homepage-react]
-- Live Site URL: [https://anwari-fikri.github.io/news-homepage-react/](https://your-live-site-url.com)
+- Live Site URL: [https://anwari-fikri.github.io/news-homepage-react/]
 
 ## My process
 
