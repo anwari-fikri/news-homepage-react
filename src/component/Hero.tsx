@@ -8,8 +8,10 @@ const Hero = () => {
       <img src={heroImageMobile} alt="iconMenu" className="md:hidden" />
       <img src={heroImageDesktop} alt="iconMenu" className="hidden md:flex" />
       <div className="flex flex-col gap-10 md:flex-row">
-        <h1 className="text-5xl font-bold">The Bright Future of Web 3.0?</h1>
-        <div className="flex flex-col justify-between gap-5">
+        <div className="basis-5/12">
+          <h1 className="text-5xl font-bold">The Bright Future of Web 3.0?</h1>
+        </div>
+        <div className="flex flex-col basis-7/12 justify-between gap-5">
           <p className="text-dark-grayish-blue">
             We dive into the next evolution of the web that claims to put the
             power of the platforms back into the hands of the people. But is it
