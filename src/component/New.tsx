@@ -3,11 +3,11 @@ import React from "react";
 const NewItem = ({ title, content }: { title: string; content: string }) => {
   return (
     <>
-      <div>
-        <div className="flex flex-col gap-2 py-6">
-          <h3 className="font-bold text-off-white text-xl">{title}</h3>
-          <p className="font-extralight text-grayish-blue text-sm">{content}</p>
-        </div>
+      <div className="cursor-pointer flex flex-col items-left justify-center gap-2 py-6 text-off-white hover:text-soft-orange">
+        <h3 className="font-bold text-lg ">{title}</h3>
+        <p className="font-extralight text-dark-grayish-blue text-sm">
+          {content}
+        </p>
       </div>
     </>
   );

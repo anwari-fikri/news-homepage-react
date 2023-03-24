@@ -16,11 +16,11 @@ const PopularItem = ({
 }) => {
   return (
     <>
-      <div className="flex flex-row items-center justify-left mx-5 my-10">
+      <div className="cursor-pointer flex flex-row items-center justify-left mx-5 my-10 hover:text-soft-red">
         <img src={image} alt="retro-pc" className="w-28" />
-        <div className="flex flex-col gap-1 pl-5 pr-3">
+        <div className="flex flex-col gap-1 pl-5 pr-3 ">
           <h2 className="text-grayish-blue font-bold text-3xl">{number}</h2>
-          <h3 className="font-bold text-lg">{title}</h3>
+          <h3 className="cursor-pointer font-bold text-lg ">{title}</h3>
           <p className="font-extralight text-dark-grayish-blue text-sm">
             {content}
           </p>

@@ -13,20 +13,20 @@ const Navigation = () => {
         <img src={logo} alt="logo" />
         <div>
           <ul className="hidden md:flex">
-            <li className="cursor-pointer ml-10 text-sm text-dark-grayish-blue">
+            <li className="cursor-pointer ml-10 text-sm text-dark-grayish-blue hover:text-soft-orange">
               <a href="/#home">Home</a>
             </li>
-            <li className="cursor-pointer ml-10 text-sm text-dark-grayish-blue">
-              <a href="/#about">New</a>
+            <li className="cursor-pointer ml-10 text-sm text-dark-grayish-blue hover:text-soft-orange">
+              <a href="/#new">New</a>
             </li>
-            <li className="cursor-pointer ml-10 text-sm text-dark-grayish-blue">
-              <a href="/#skills">Popular</a>
+            <li className="cursor-pointer ml-10 text-sm text-dark-grayish-blue hover:text-soft-orange">
+              <a href="/#popular">Popular</a>
             </li>
-            <li className="cursor-pointer ml-10 text-sm text-dark-grayish-blue">
-              <a href="/#projects">Trending</a>
+            <li className="cursor-pointer ml-10 text-sm text-dark-grayish-blue hover:text-soft-orange">
+              <a href="/#trending">Trending</a>
             </li>
-            <li className="cursor-pointer ml-10 text-sm text-dark-grayish-blue">
-              <a href="/#contact">Categories</a>
+            <li className="cursor-pointer ml-10 text-sm text-dark-grayish-blue hover:text-soft-orange">
+              <a href="/#categories">Categories</a>
             </li>
           </ul>
           <button
