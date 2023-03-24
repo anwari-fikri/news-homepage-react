@@ -9,7 +9,7 @@ function App() {
     <div className="bg-off-white lg:px-40 md:px-0">
       <Navigation />
       <main>
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row ">
           <Hero />
           <New />
         </div>
